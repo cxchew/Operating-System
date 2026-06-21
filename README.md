@@ -1,4 +1,4 @@
-# SECR2043 Operating Systems: Course Portfolio 🐧💻
+# SECR2043 Operating Systems🐧💻
 
 Welcome to my core repository for **SECR2043 Operating Systems** at Universiti Teknologi Malaysia (UTM). This portfolio houses a structured log of practical laboratory experiments, low-level shell engineering, system monitoring tasks, and a multi-threaded synchronization engine.
 
