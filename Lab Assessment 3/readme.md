@@ -1,16 +1,16 @@
-# Lab Assessment 2: Linux Process Monitoring, Architecture & Scheduling Controls 🧵📊
+# Lab Assessment 3: Automation via Bash Shell Scripting & POSIX Permissions 🛡️📝
 
 ## 1. Lab Summary
-This laboratory focuses on process lifecycle monitoring and CPU scheduling interventions. By spinning up continuous background mock workers, the workspace explores how the kernel monitors and interacts with executing threads:
+This laboratory addresses system administration scaling challenges by utilizing shell scripting for automation, alongside enforcing security policies through file system access permissions:
 
-* **Prerequisites & Process Ingestion** Acquired custom multi-threaded C source codes via remote terminal streaming (`wget`), compiled executable binaries with optimization paths, and initialized the cluster as an asynchronous background thread layer (`./mainprocess &`).
-* **Process Monitoring and Management** Used system tracing utilities to inspect running jobs. Configured column filters (`ps -eo`) to monitor memory ingestion metrics, implemented descending sort parameters (`--sort=-pmem`) to find heavy processes, mapped process tree ancestry using `pstree -p -t`, adjusted execution priorities using root administrative commands (`renice`), and executed terminal termination sequences (`killall`).
+* **Activity 1: Shell Commands Tracing** Analyzed complex, multi-tiered file command structures containing directory jumps and data replication operations. Mapped out structural parent-to-child directory trees originating from the `$HOME` workspace to track tracking behaviors.
+* **Activity 2: Shell Scripting and Access Control** Engineered automated Bash shell script scripts (`myname2a.sh`) to loop through raw documents, parse values, and automatically deploy structured file systems. Evaluated discretionary access permissions masks (`drwxrwxr-x`) and designed a security remediation script (`myname2c.sh`) using octal and symbolic modes (`chmod`) to enforce clean operational boundaries across Owner, Group, and Public access profiles.
 
 ---
 
 ## 2. Technical Reflection
 
 ### What I Learned
-* **Process Ancestry & Thread Structures:** Mapping application lifecycles onto process trees clearly visualizes how a main process spawns independent child processing lanes to achieve parallelism.
-* **Dynamic Priority Allocation:** Changing task priorities through `renice` demonstrated how operating system schedulers dynamically balance CPU cycles between low-priority background work and urgent active tasks.
-* **System Resource Cleanups:** Mastering process signals changed my approach from forced program terminations to gracefully cleaning up hanging background threads, protecting resources from memory leaks.
+* **Automated Environment Provisioning:** Writing structural shell automation scripts proved how powerful scripting is for replacing manual console inputs, reducing error rates when setting up bulk server assets.
+* **Octal and Symbolic Masking Models:** Working directly with access matrices made POSIX permissions highly concrete. I learned to balance open read access against safe execution constraints.
+* **Defensive Security Management:** Designing security scripts emphasized that folders must be hardened carefully based on user roles, preventing unauthorized context jumps or file overrides in multi-tenant directories.
